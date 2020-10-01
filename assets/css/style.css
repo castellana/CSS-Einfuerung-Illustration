@@ -1,0 +1,179 @@
+nav a {
+    color: #202020;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul {
+    text-align: right;
+}
+nav li {
+    display: inline; /*oder inline-block, si queremos que tengan un ancho*/
+    padding: 0 10px;
+}
+
+.absurd {
+    background: url(../img/illustration1.gif) right / contain no-repeat;
+}
+.img-right {
+    padding: 15vh 10%;
+    margin-bottom: 10vh; /*margen entre las secciones**/
+}
+.img-right h1  {
+    width: 50%;
+    font-size: 4rem;;
+}
+.img-right p {
+    width: 50%;
+    font-size: 2rem;
+}
+
+.img-right a {
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid rgba (0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.img-right a:nth-of-type(1) {
+color: #fff;
+background: #000;
+}
+
+.img-right a:nth-of-type(2) {
+color: #000000;
+}
+
+.beauty {
+    background: url(../img/illustration2.png) 10% / 30% no-repeat; /*contain era muy grande, por eso cambiamos a 20%*/
+}
+
+.img-left {
+    padding: 20vh 10% 20vh 60%;
+}
+.img-left p {
+    font-size: 2rem;
+}
+
+.img-left h1 {
+    font-size: 4rem;
+}
+
+.expresiveness {
+    background: url(../img/illustration3.png) right / 30% no-repeat;
+    margin-right: 10%;
+}
+.center {
+    text-align: center;
+}
+.center h1 {
+    font-size: 4rem;;
+}
+.center p {
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.illustrations img {
+    width: 25%;
+    margin: 3%;  /*calculamos cuánto % sobra (25%) y lo dividimos en los margins*/
+}
+.examples article {
+    width: 90%;
+    margin: 5vh auto;
+}
+.examples img {
+    width: 47.5%;
+
+}
+.examples img:nth-of-type(1) {
+margin-right: 5%;
+}
+
+.download {
+    margin-top: 10vh;
+}
+.download p {
+    width: 60%; /*60% de su padre (seccion)*/
+}
+
+.membership h2 {
+    font-size: 2rem;
+}
+.membership h3 {
+    font-size: 3.5rem;
+}
+.membership p {
+    font-size: 2rem;
+    color: grey;
+}
+.membership ul {
+    margin: 0;  /*para centrar*/
+    padding: 0;
+    list-style: none;
+}
+.membership li {
+    padding: 10px 0;
+}
+.membership {
+    background: #55acee;
+    width: fit-content;
+    margin: 5vh auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.membership a {
+    color: #fff;
+    background: red;
+    padding: 20px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+footer p{
+    color: #cccccc;
+    /*margin: 20px 0; no funciona, porque se überschreibt con el p de más arriba*/
+}
+
+footer>a {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+}
+footer li::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+footer li:nth-of-type(1)::before {
+    background:#3b5998;
+}
+footer li:nth-of-type(2)::before {
+    background: #fcaf45;
+}
+footer li:nth-of-type(3)::before {
+    background: #55acee;
+}
+footer li:nth-of-type(4)::before {
+    background: #c4302b;
+}
+footer ul a {
+    color: #000;
+}
+
+/* hasta aquí la corrección*/
